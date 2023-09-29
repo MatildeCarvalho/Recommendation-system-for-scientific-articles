@@ -1,0 +1,19 @@
+# Divisao em traino e em teste
+
+Usa os ficheiros
+- file_final\\articles_combined.csv
+- file_final\\users_data.csv'
+
+Para criar um ficehiro de traino e de teste 80% para 20%
+esta precentagem pode ser alterada no for no parametro test_percentage=0.2
+
+cria um sample_df para cada user neste caso ve quantos artigos o user tem nas linhas de test e cria o mesmo numero de artigos que o user nao leu. ou seja se eu tenho o artigo 1, 2 como lidos no test o sample vai ter dimensao 4 porque vou juntar dois artigos que ainda nao li ao test.  esta % pode ser alterada sample_df = create_article_sample(interactions_df, articles_df, user, num_samples=len(test_rows))
+
+no test_set o rating 1 significa que o user leu e o 0 significa que nao leu. ou seja rating =1 significa true_ prossitive 
+
+## Retorna
+
+- train teste split\test_set.csv
+- train teste split\train_set.csv
+
+

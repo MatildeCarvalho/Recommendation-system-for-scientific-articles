@@ -1,0 +1,36 @@
+Nesta pasta tenho o ficheiro **articles_combined.csv** que contem as entidades e os atributos de cada artigo
+Lista de entidades:
+
+    Chemical Entities of Biological Interest (ChEBI)
+    Gene Ontology (GO)
+    DeCS Multilingual
+    WordNet
+Usei a biblioteca MER 
+colunas do ficheiro:
+    
+        doc.id
+        title
+        citeulike.id
+        raw.title
+        raw.abstract
+        clean_abstract
+        entities
+Dei drop do artigo com o doc.id= 12479 pois o abstract nao dava para tirar as entidades 
+
+
+ao executar o ficheiro **processe_userfile.py** lemos o ficheiros **file_processing\articles_combined.csv** e **file_creation\users.json**
+Cria um novo fihciro **file_processing\users_data.csv** que contem as colunas 
+        user
+        article
+        rating
+        Entities
+
+Dei drop das linhas que tinham o artigo com o id 12479 ou seja nao existem users que tenham lido esse artio pois o mesmo nao existe 
+        
+
+
+Total de articles diferentes: 16979
+        
+Total de users diferentes: 5551
+
+meti os artigos a comecar no 0 
