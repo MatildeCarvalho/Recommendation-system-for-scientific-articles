@@ -87,7 +87,7 @@ plt.xlabel('K')
 plt.ylabel('Recall')
 plt.legend()
 plt.grid(True)
-plt.savefig('recall_vs_k.png')  # Salva o gráfico como um arquivo PNG
+plt.savefig('results//recall_vs_k.png')  # Salva o gráfico como um arquivo PNG
 plt.show()
 
 # Plot Precision vs. K
@@ -99,7 +99,7 @@ plt.xlabel('K')
 plt.ylabel('Precision')
 plt.legend()
 plt.grid(True)
-plt.savefig('precision_vs_k.png')  # Salva o gráfico como um arquivo PNG
+plt.savefig('results//precision_vs_k.png')  # Salva o gráfico como um arquivo PNG
 plt.show()
 
 
@@ -115,7 +115,7 @@ final_results = {
 # Crie um DataFrame com os dados
 results = pd.DataFrame(final_results)
 
-results.to_csv('resultado_final.csv', index=False)
+results.to_csv('results//resultado_final.csv', index=False)
 
 
 #TF-IDF Metrics:

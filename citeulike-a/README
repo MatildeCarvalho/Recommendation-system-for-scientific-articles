@@ -1,6 +1,0 @@
-Nesta pasta tenho os ficheiros:
-
-**data_row.csv**: contem os artigos "doc.id","title","citeulike.id","raw.title","raw.abstract"
-**users.txt**: onde a linha é o user e depois os doc.id dos artigos que esse user leu 
-
-os ficheiros foram tirados do site ``https://github.com/js05212/citeulike-a/tree/master``
