@@ -17,4 +17,8 @@ citeulike-a
 graficos.py
 resultado_final.csv
 __pycache__
+data_clean
+file_final
+file_processing
+Train_teste_split
 
